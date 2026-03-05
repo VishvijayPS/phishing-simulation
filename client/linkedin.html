@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <title>LinkedIn Login (Simulation)</title>
+    <link rel="stylesheet" href="./style/linkedin-style.css" />
+
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="logo">Linked<span>in</span></div>
+
+      <h2>Sign in</h2>
+
+      <form action="/login/linkedin" method="POST">
+        <input type="text" name="email" placeholder="Email or phone" required />
+
+        <input
+          type="password"
+          name="password"
+          placeholder="Password"
+          required
+        />
+
+        <a class="forgot" href="#">Forgot password?</a>
+
+        <button type="submit">Sign in</button>
+      </form>
+
+      <div class="signup">New to LinkedIn? <a href="#">Join now</a></div>
+    </div>
+  </body>
+</html>

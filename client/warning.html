@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Phishing Awareness</title>
+    <link rel="stylesheet" href="./style/warning-style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>⚠ Phishing Simulation</h1>
+
+      <div class="info">
+        <p>
+          This login page was part of a
+          <span class="highlight">cybersecurity awareness simulation.</span>
+        </p>
+
+        <br />
+
+        <p>Attackers often create fake login pages to steal:</p>
+
+        <p class="highlight">
+          • Passwords<br />
+          • Email credentials<br />
+          • Personal information
+        </p>
+      </div>
+
+      <div class="timer" id="count">5</div>
+
+      <div class="progress">
+        <div class="bar"></div>
+      </div>
+
+      <div class="terminal">
+        <b>🔐 How to Identify Phishing Websites:</b>
+        <ul>
+          <li>Check the website URL carefully before entering credentials.</li>
+          <li>Look for spelling mistakes or unusual domain names.</li>
+          <li>Do not click login links from suspicious emails or messages.</li>
+          <li>
+            Always verify if the website uses HTTPS and a valid certificate.
+          </li>
+          <li>Avoid entering passwords on unfamiliar or unexpected pages.</li>
+          <li>
+            Enable Two-Factor Authentication (2FA) for important accounts.
+          </li>
+          <li>
+            Report suspicious emails or websites to your organization or service
+            provider.
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer">You will be redirected automatically.</div>
+    </div>
+
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const site = params.get("site");
+
+      let redirectURL = "https://www.google.com";
+
+      if (site === "google") {
+        redirectURL = "https://accounts.google.com";
+      }
+
+      if (site === "github") {
+        redirectURL = "https://github.com/login";
+      }
+
+      if (site === "linkedin") {
+        redirectURL = "https://www.linkedin.com/login";
+      }
+
+      if (site === "facebook") {
+        redirectURL = "https://www.facebook.com/login";
+      }
+
+      if (site === "instagram") {
+        redirectURL = "https://www.instagram.com/accounts/login/";
+      }
+
+      if (site === "steam") {
+        redirectURL = "https://store.steampowered.com/login/";
+      }
+
+      let time = 5;
+
+      const timer = setInterval(function () {
+        time--;
+
+        document.getElementById("count").innerText = time;
+
+        if (time === 0) {
+          clearInterval(timer);
+          window.location.href = redirectURL;
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>

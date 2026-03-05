@@ -1,0 +1,72 @@
+.steam-body {
+  background: linear-gradient(to bottom, #1b2838, #0f1923);
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Login box */
+
+.steam-container {
+  background: #171a21;
+  padding: 40px;
+  width: 350px;
+  text-align: center;
+  border-radius: 6px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+/* Steam logo */
+
+.steam-logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+/* Heading */
+
+.steam-container h2 {
+  color: white;
+  margin-bottom: 25px;
+}
+
+/* Inputs */
+
+.steam-container input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 3px;
+  background: #32353c;
+  color: white;
+  font-size: 14px;
+}
+
+/* Button */
+
+.steam-container button {
+  width: 100%;
+  padding: 12px;
+  background: #66c0f4;
+  border: none;
+  border-radius: 3px;
+  color: #0b141b;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.steam-container button:hover {
+  background: #417a9b;
+}
+
+/* Help text */
+
+.steam-help {
+  margin-top: 15px;
+  color: #8f98a0;
+  font-size: 13px;
+}

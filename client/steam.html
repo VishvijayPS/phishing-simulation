@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Steam Login (Simulation)</title>
+    <link rel="stylesheet" href="./style/steam-style.css" />
+  </head>
+
+  <body class="steam-body">
+    <div class="steam-container">
+      <img
+        src="https://store.cloudflare.steamstatic.com/public/shared/images/header/logo_steam.svg"
+        class="steam-logo"
+      />
+
+      <h2>Sign in to Steam</h2>
+
+      <form action="/login/steam" method="POST">
+        <input
+          type="text"
+          name="username"
+          placeholder="Steam Account Name"
+          required
+        />
+
+        <input
+          type="password"
+          name="password"
+          placeholder="Password"
+          required
+        />
+
+        <button type="submit">Sign In</button>
+      </form>
+
+      <p class="steam-help">Forgot your password?</p>
+    </div>
+  </body>
+</html>

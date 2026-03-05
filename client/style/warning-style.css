@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background: #0a0a0a;
+  font-family: "Courier New", monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e4e4e4;
+}
+
+/* Main container */
+
+.container {
+  width: 500px;
+  background: #111;
+  padding: 40px;
+  border-radius: 10px;
+  border: 1px solid #00ff9c;
+  box-shadow: 0 0 25px rgba(0, 255, 156, 0.25);
+  text-align: center;
+}
+
+/* Title */
+
+h1 {
+  color: #ff4d4d;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+/* Text section */
+
+.info {
+  text-align: left;
+  margin-top: 10px;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+/* highlight */
+
+.highlight {
+  color: #00ff9c;
+  font-weight: bold;
+}
+
+/* timer */
+
+.timer {
+  font-size: 32px;
+  margin-top: 20px;
+  color: #00ff9c;
+}
+
+/* progress bar */
+
+.progress {
+  width: 100%;
+  height: 8px;
+  background: #222;
+  border-radius: 5px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.bar {
+  height: 100%;
+  width: 0%;
+  background: #00ff9c;
+  animation: load 5s linear forwards;
+}
+
+@keyframes load {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+/* terminal box */
+
+.terminal {
+  margin-top: 25px;
+  text-align: left;
+  background: #000;
+  padding: 15px;
+  border-radius: 6px;
+  font-size: 13px;
+  color: #00ff9c;
+  line-height: 1.5;
+  border: 1px solid #00ff9c33;
+}
+
+/* footer */
+
+.footer {
+  margin-top: 20px;
+  font-size: 13px;
+  color: #aaa;
+}
