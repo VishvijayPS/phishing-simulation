@@ -1,17 +1,1 @@
-{
-  "name": "final-miniproject-6th_sem",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "dependencies": {
-    "body-parser": "^2.2.2",
-    "express": "^5.2.1"
-  }
-}
+{"name":"final-miniproject-6th_sem","version":"1.0.0","description":"PhishGuard - Phishing Awareness Simulator","main":"server/server.js","scripts":{"start":"node server/server.js","dev":"nodemon server/server.js"},"keywords":["cybersecurity","phishing","awareness","simulator"],"author":"Vishvijay P S","license":"ISC","type":"commonjs","dependencies":{"body-parser":"^2.2.2","cors":"^2.8.5","express":"^5.2.1"},"devDependencies":{"nodemon":"^3.1.14"}}
